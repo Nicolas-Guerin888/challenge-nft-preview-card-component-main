@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+}
+
+main {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 570px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+}
+
+.container_photo_nft img {
+    border-radius: 15px;
+}
+
+.photo_hover {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(21, 255, 216, 0.5);
+    display: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.container_photo_nft:hover .photo_hover {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4em;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-left: 8px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+em:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-top: 25px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.ethereum {
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    width: 50%;
+    height: 20px;
+}
+
+.time {
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    height: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 25px;
+
+}
+.createur {
+    color: hsl(215, 51%, 70%);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.createur img {
+    width: 40px;
+    height: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+em {
+    color: hsl(0, 0%, 100%);
+    font-style: normal;
+} 
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width : 400px) {
+    .card {
+        width: 75vw;
+        height: auto;
+    }
+
+    .container_photo_nft img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
